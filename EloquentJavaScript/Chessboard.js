@@ -14,9 +14,10 @@
 // = 8 and change the program so that it works for any size, outputting a grid
 // of the given width and height."
 line = ""
+size = 8
 
-for (let x = 0; x < 8; x++) {           // first for loop works on the rows so add \n at the end
-    for ( let y = 0; y < 8; y++) {      // inner loop works on columns 
+for (let x = 0; x < size; x++) {           // first for loop works on the rows so add \n at the end
+    for ( let y = 0; y < size; y++) {      // inner loop works on columns 
         if ((x + y) % 2 === 0) {        // think of as x & y coordinates of the index? first index is 0 and 0 so modulo 2 ("#"), second index is 1 and 0 so not modulo 2 (" ")
             line += "#"
         } else {
